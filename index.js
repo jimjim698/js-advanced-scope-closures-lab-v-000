@@ -1,5 +1,6 @@
 function produceDrivingRange(range){
-  return function(finalRange){
+  return function(start,finish){
+    let finalRange = start - finish >0 ? start - finish : finish - start
     if (range >= finalRange){
      let diff = range - finalRange
      return `within range by ${diff} blocks`
