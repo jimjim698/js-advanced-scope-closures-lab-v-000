@@ -2,6 +2,7 @@ function produceDrivingRange(range){
   return function(start,finish){
     let finalRange = start - finish >0 ? start - finish : finish - start
     if (range >= finalRange){
+      debugger
      let diff = range - finalRange
      return `within range by ${diff} blocks`
      }
