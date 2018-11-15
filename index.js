@@ -1,8 +1,8 @@
 function produceDrivingRange(range){
   return function(finalRange){
-    if (range >= finalRange){ return 
+    if (range >= finalRange){
      let diff = range - finalRange
-     return `%{diff} blocks with range`
+     return `${diff} blocks with range`
     }
   }
 }
