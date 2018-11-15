@@ -1,7 +1,7 @@
 function produceDrivingRange(range){
   return function(start,finish){
     debugger
-    let finalRange = start - finish >0 ? start - finish : finish - start
+    let finalRange = parseFloat(start) - parseFloat(finish) >0 ? start - finish : finish - start
     if (range >= finalRange){
      let diff = range - finalRange
      return `within range by ${diff} blocks`
