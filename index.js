@@ -1,5 +1,6 @@
 function produceDrivingRange(range){
   return function(start,finish){
+    let start = 
     let finalRange = parseFloat(start) - parseFloat(finish) >0 ? start - finish : finish - start
     if (range >= finalRange){
      let diff = range - finalRange
